@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href='css/main.css'>
+</head>
+
+<body id='body'>
+    <header class='header'>
+        <div class="search">
+            <div class="search-cluster">
+                <input class='search-input' type="text" placeholder='City or Zip Code'>
+                <select class='country' name="cars" id="cars">
+                    <option value="us" selected>US</option>
+                    <option value="uk">UK</option>
+                </select>
+            </div>
+            <button class='search-btn'>Search</button>
+
+
+        </div>
+    </header>
+    <main>
+        <div class="beforeInit">
+            <h1>Find the weather... Anywhere!</h1><br>
+            <p>Type any Zip Code or City for the weather in that area.</p><br>
+            <input class='search-input' type="text" placeholder='Where To?'>
+            <select class='country' name="cars" id="cars">
+                <option value="us">US</option>
+                <option value="uk">UK</option>
+            </select>
+            <br><br>
+            <div class="search-container">
+                <button class='search-btn'>Search</button>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="bg1">
+                <h2 class='city'><br> <span></span></h2>
+            </div>
+            <div class="bg1">
+                <h2><i class="fas fa-battery-three-quarters"></i></h2>
+                <p><img class='weatherIcon'></p>
+            </div>
+            <div class="bg2">
+                <h2 class='weatherDescript'></h2>
+                <p></p>
+            </div>
+            <div class="bg1">
+                <h2 class='temperature'></h2>
+            </div>
+            <div class="bg1">
+                <h2 class='minMaxTemp'></h2>
+                <p></p>
+            </div>
+            <div class="bg2">
+                <h2 class='feelsLike'></h2>
+                <p></p>
+            </div>
+            <div class="bg1">
+                <h2 class='humidity'></h2>
+                <p></p>
+            </div>
+            <div class="bg1">
+                <h2 class='winds'></h2>
+                <p></p>
+            </div>
+            <div class="bg2">
+                <h2 class='pressure'></h2>
+                <p></p>
+            </div>
+
+        </div>
+    </main>
+    <script src='index.js'></script>
+</body>
+
+</html>
